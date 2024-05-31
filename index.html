@@ -19,6 +19,17 @@
 <body>
   <h1>Hello, im arham, nice to meet you :)</h1>
   <h2><script>mixpanel.track("bodyH2");</script></h2>
+<h2><button onclick="vibo()">Click</button></h2>
+  
+  <script>
+  function vibo(){
+  console.log("Begin");
+  navigator.vibrate(200); // vibrate for 200ms
+navigator.vibrate([
+  100, 30, 100, 30, 100, 30, 200, 30, 200, 30, 200, 30, 100, 30, 100, 30, 100,
+]); // Vibrate 'SOS' in Morse.
+  }
+  </script>
 </body>
 </html>
 
